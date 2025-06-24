@@ -1,10 +1,10 @@
 ---
-title: Desarrolo Web
+title: Desarrolo Web Responsive
 publishDate: 2020-03-02 00:00:00
-img: /assets/stock-1.jpg
+img: /assets/proyectos/webResponsivo.jpg
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  La página ajusta automáticamente imágenes, textos y el diseño en móviles y tablets. Esto garantiza una experiencia de navegación fluida, intuitiva y visualmente atractiva para cada visitante, sin importar el dispositivo que utilice. El contenido, las imágenes y los elementos interactivos se ajustan de forma inteligente para mantener la funcionalidad y estética en todo momento.
 tags:
   - Design
   - Dev

@@ -2,9 +2,9 @@
 title: Servicio de Reparación
 publishDate: 2024-11-04 00:00:00
 img: /assets/proyectos/MIE.JPG
-img_alt: Repara tu equipo con los mejores profesionales, los más económicos de la zona
-description: |
-  Nuestro trato es amable y nuestro equipo este compuesto por profesionales especializados. Estamos al servicio de nuestros clientes, atendiéndoles de forma profesional en cualquier problema técnico.
+img_alt: Web de servicios y reparacion de equipos informaticos 
+description: | 
+  Pagina Web de Servicios informaticos con los mejores profesionales, Ofrece soluciones de calidad a precios competitivos, el equipo esta compuesto por profesionales especializados al servicio de los clientes, atendiéndo de forma profesional en cualquier problema técnico.
 tags:
   - Design
   - Dev

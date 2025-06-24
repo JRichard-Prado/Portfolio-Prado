@@ -2,10 +2,9 @@
 title: Web Bellas Artes
 publishDate: 2019-12-01 00:00:00
 img: /assets/proyectos/ArteLea.JPG
-img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
+img_alt: Artista de nacionalidad francesa y española Léa Thieux
 description: |
-  We paired with a cutting-edge music API and a team of horticulturalists
-  to build AI-generated playlists that maximize houseplant health.
+  Artista de nacionalidad francesa y española graduada en bellas artes. Trabaja con técnicas pictóricas y grafícas, realizando también obra digital.
 tags:
   - Dev
   - Branding

@@ -30,22 +30,22 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+					title="Hola, mi nombre es Richard Prado."
+					tagline="Soy un desarrollador creativo que actualmente reside en Madrid, España."
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill><Icon icon="code" size="1.33em" /> Desarrollo FrontEnd</Pill>
+						<Pill><Icon icon="hard-drives" size="1.33em" /> Desarrollo BackEnd</Pill>
+						<Pill><Icon icon="magnifying-glass" size="1.33em" /> Posicionamiento SEO</Pill>
 					</div>
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+					alt="Desarrollador creativo Richard Prado"
 					width="480"
 					height="620"
-					src="/assets/portrait.jpg"
+					src="/assets/programacion.jpg"
 				/>
 			</header>
 
@@ -55,8 +55,8 @@ const projects = (await getCollection('work'))
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<h3>Seleccione un trabajo</h3>
+					<p>Eche un vistazo a continuación a algunos de mis trabajos destacados para clientes de los últimos años.</p>
 				</header>
 
 				<div class="gallery">
@@ -73,7 +73,7 @@ const projects = (await getCollection('work'))
 
 				<div class="cta">
 					<CallToAction href="/work/">
-						View All
+						Mostrar más trabajos
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
 				</div>
@@ -81,17 +81,16 @@ const projects = (await getCollection('work'))
 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
+					<h3>Menciones</h3>
 					<p>
-						I have been fortunate enough to receive praise for my work in several publications. Take
-						a look below to learn more.
+						He tenido la suerte de recibir elogios por mi trabajo en varias publicaciones. Para más información, consulta la sección a continuación.
 					</p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
+							['Medium', 'BuzzFeed', 'The Next Web'].map((brand) => (
 								<li class="mention-card">
 									<p>{brand}</p>
 								</li>

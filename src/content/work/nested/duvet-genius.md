@@ -1,10 +1,10 @@
 ---
-title: Duvet Genius
-publishDate: 2020-03-04 00:00:00
-img: /assets/stock-3.jpg
-img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
+title: Servicio de Reparación
+publishDate: 2024-11-04 00:00:00
+img: /assets/proyectos/MIE.JPG
+img_alt: Repara tu equipo con los mejores profesionales, los más económicos de la zona
 description: |
-  We developed a virtual showcase for the softest bedding imaginable.
+  Nuestro trato es amable y nuestro equipo este compuesto por profesionales especializados. Estamos al servicio de nuestros clientes, atendiéndoles de forma profesional en cualquier problema técnico.
 tags:
   - Design
   - Dev

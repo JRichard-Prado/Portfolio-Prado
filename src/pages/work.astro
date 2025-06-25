@@ -7,10 +7,11 @@ import ContactCTA from '../components/ContactCTA.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 import Hero from '../components/Hero.astro';
 import Grid from '../components/Grid.astro';
-
+// organiza los proyectos por la fecha de publicación (publishDate), de más reciente a más antiguo.
 const projects = (await getCollection('work')).sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
 );
+
 ---
 
 <BaseLayout
@@ -24,14 +25,15 @@ const projects = (await getCollection('work')).sort(
 				tagline="Vea mis proyectos más recientes a continuación para tener una idea de mi experiencia pasada."
 				align="start"
 			/>
-			<Grid variant="offset">
+
+			<Grid variant="offset"> 
 				{
 					projects.map((project) => (
 						<li>
 							<PortfolioPreview project={project} />
 						</li>
+						
 					))
-					
 				}
 			</Grid>
 			

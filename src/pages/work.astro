@@ -31,17 +31,10 @@ const projects = (await getCollection('work')).sort(
 							<PortfolioPreview project={project} />
 						</li>
 					))
+					
 				}
 			</Grid>
-			<!-- <Grid variant="offset">
-				{
-					projects.map((project) => (
-						<li>
-							<PortfolioPreview project={project} />
-						</li>
-					))
-				}
-			</Grid> -->
+			
 		</main>
 		<ContactCTA />
 	</div>

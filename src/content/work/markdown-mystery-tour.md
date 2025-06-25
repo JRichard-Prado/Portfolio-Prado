@@ -6,30 +6,34 @@ img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
   La página ajusta automáticamente imágenes, textos y el diseño en móviles y tablets. Esto garantiza una experiencia de navegación fluida, intuitiva y visualmente atractiva para cada visitante, sin importar el dispositivo que utilice. El contenido, las imágenes y los elementos interactivos se ajustan de forma inteligente para mantener la funcionalidad y estética en todo momento.
 tags:
-  - Design
-  - Dev
-  - User Testing
+  - Diseño adaptable
+  - SEO móvil
+  - Velocidad de carga móvil
 ---
 
-## Level-two heading
+## ¿Por qué usar diseño web responsive?
 
-> Tell me and I forget. Teach me and I remember. Involve me and I learn.
+> Todo el mundo está conectado a internet hoy en día. 
 
-Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+Si no tienes un teléfono inteligente en tu bolsillo en este momento, eres probablemente un caso poco común.
 
-Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel quam elementum pulvinar etiam non.
+Así como hay más usuarios conectados, también hay más formas de conectarse a internet. Desde computadoras de escritorio, laptops, iPhones, tablets y hasta refrigeradoras, todos estos dispositivos con diferentes tamaños de pantalla necesitan conectarse a tu sitio web. Aquí entra en acción el diseño web responsive.
 
-### Level-three heading
+### Elementos a tomar en cuenta para una web responsive
 
-Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl pretium fusce.
+##### Contenedores:
 
-### Level-three heading
+Deben poder adaptarse a las diferentes pantallas de manera fluida.
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+##### Tipografías:
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+Es una buena práctica usar textos relativos y no solamente fijos, que no se verán bien en pantallas más grandes o más pequeñas. 
 
-#### Level-four heading
+##### Imágenes y multimedia:
 
-- We noted this
-- And also this other point
+Contenido optimizado en relación a su peso para velocidad de carga y adaptabilidad tanto a orientación vertical como horizontal.
+
+##### Menús:
+
+Fáciles de desplegar y encontrar en distintos dispositivos, con información útil priorizada para el usuario.
+

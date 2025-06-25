@@ -2,18 +2,16 @@
 title: Desarrollo Web
 publishDate: 2019-10-02 00:00:00
 img: /assets/proyectos/paraweb.JPG
-img_alt: El centro radiográfico CERPAX .
+img_alt: Desarrollo Web.
 description: |
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut nisi iure ullam omnis excepturi voluptate dolorem, facere id? Laudantium expedita quaerat obcaecati fuga odio! Ea illo quibusdam repellendus consequuntur voluptates?.
+  Proyectos de código abierto, aplicaciones web experimentales.
 tags:
-  - Diseño informativo optimizado
-  - Estructura semántica HTML5
+  - Soluciones web.
+  - Desarrollo a medida
 ---
-### Página de servicios profesionales
+### Diseñamos tu página web
 
 >Diseñado para brindarte una experiencia rápida, segura y sencilla.
 
-Ya sea que estés buscando información, comprando en línea o reservando un servicio.
-
-Gracias a su diseño amigable permite explorar un catálogo de sucursales y conocer ofertas exclusivas en la seccion de [servicios](https://cerpax.com/tomografia/) descubre por qué cada vez más personas eligen como su aliado comercial.
+Soy una persona apasionada por mi trabajo, comprometida con aportar mis conocimientos, habilidades y experiencia en cada proyecto. Ofrezco ideas innovadoras, soluciones personalizadas y un seguimiento de calidad, siempre enfocado en alcanzar los objetivos del cliente y superar sus expectativas.
 

@@ -32,5 +32,5 @@ La navegación entre diferentes secciones o vistas se realiza sin interrupciones
 
 ##### Desarrollo con frameworks:
 
-Se suelen utilizar frameworks y librerías JavaScript como React, [Angular](https://angular.dev/) o Vue.js para facilitar el desarrollo de SPAs. 
+Se suelen utilizar frameworks y librerías JavaScript como React,<a href="https://angular.dev/" target="_blank">Angular</a>  o Vue.js para facilitar el desarrollo de SPAs. 
 

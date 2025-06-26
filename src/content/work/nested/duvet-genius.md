@@ -17,5 +17,7 @@ tags:
 
 ##### Area profesional
 
-Más de 300 empresas y autónomos ya colaboran con [MIE](https://mantenimientoinformaticoeconomico.com/) a nivel nacional.
+Más de 300 empresas y autónomos ya colaboran con <a href="https://mantenimientoinformaticoeconomico.com/" target="_blank">MIE</a> a nivel nacional.
+
+
 

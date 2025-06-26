@@ -24,7 +24,7 @@ const { variant } = Astro.props;
 		gap: 1.5rem;
 	}
 
-	/* If last row contains only one item, make it span both columns. */
+	/* Si la última fila contiene solo un elemento, haga que abarque ambas columnas. */
 	.grid.small > :global(:last-child:nth-child(odd)) {
 		grid-column: 1 / 3;
 	}
@@ -32,17 +32,18 @@ const { variant } = Astro.props;
 	@media (min-width: 50em) {
 		.grid {
 			grid-template-columns: 1fr 1fr 1fr;
-			gap: 3rem;
+			gap: 1rem;
 		}
 
 		.grid.offset {
-			/* --row-offset: 5.5rem; */
+			--row-offset: 5.5rem;
 			padding-bottom: var(--row-offset);
 		}
 
-		/* Shift first item in each row vertically to create staggered effect. */
+		/* Desplace el primer elemento de cada fila verticalmente para crear un efecto escalonado. */
 		.grid.offset > :global(:nth-child(odd)) {
-			transform: translateY(var(--row-offset));
+			
+			/* transform: translateY(var(--row-offset)); */
 		}
 
 		/* If last row contains only one item, display it in the second column. */

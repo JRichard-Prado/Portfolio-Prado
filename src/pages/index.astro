@@ -90,7 +90,7 @@ const projects = (await getCollection('work'))
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							['Medium', 'BuzzFeed', 'The Next Web'].map((brand) => (
+							['Optimizé el sitio de una empresa de tecnología, reduciendo el tiempo de carga de 6.2s a 1.9s, lo que contribuyó a un aumento del 32% en la tasa de conversión.', 'Contribuí a varias librerías de código abierto en GitHub, incluyendo correcciones de bugs y mejoras de documentación en proyectos como Tailwind CSS y Next.js. ', 'Diseñé y desarrollé una tienda en línea desde cero utilizando React, Node.js y MongoDB. La plataforma logró más de 1,500 ventas en los primeros 3 meses.'].map((brand) => (
 								<li class="mention-card">
 									<p>{brand}</p>
 								</li>
@@ -231,7 +231,7 @@ const projects = (await getCollection('work'))
 
 	.mention-card {
 		display: flex;
-		height: 7rem;
+		height: 10rem;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
@@ -240,6 +240,7 @@ const projects = (await getCollection('work'))
 		color: var(--gray-300);
 		background: var(--gradient-subtle);
 		box-shadow: var(--shadow-sm);
+		padding: 1rem;
 	}
 
 	@media (min-width: 50em) {

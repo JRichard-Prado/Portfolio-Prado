@@ -2,6 +2,25 @@
 // import CallToAction from './CallToAction.astro';
 import Icon from './Icon.astro';
 ---
+
+---
+---
+<h1>Registro</h1>
+<form method="POST">
+  <label>
+    Usuario:
+    <input type="text" name="username" required />
+  </label>
+  <label>
+    Correo electrónico:
+    <input type="email" name="email" required />
+  </label>
+  <label>
+    Contraseña:
+    <input type="password" name="password" required minlength="6" />
+  </label>
+  <button>Enviar</button>
+</form>
 <!-- <form>
   <label>
     Usuario:
@@ -18,7 +37,7 @@ import Icon from './Icon.astro';
   <button>Enviar</button>
 </form> -->
 
-<div
+<!-- <div
   class="not-content mx-auto my-3 rounded-3xl border border-gray-200 bg-gray-100 p-6 text-gray-900 md:p-10"
 >
   <h3 class="w-full text-center text-2xl font-medium">Contact Me</h3>
@@ -68,10 +87,10 @@ import Icon from './Icon.astro';
 </div>
 
 <style>
-  /* @import "tailwindcss/theme" theme(reference);
+  @import "tailwindcss/theme" theme(reference);
 
   .form__input {
     @apply w-full rounded-md border border-transparent bg-gray-200 p-2.5 transition outline-none;
     @apply focus-visible:border-blue-600/70 focus-visible:ring-2 focus-visible:ring-blue-600/50;
-  } */
-</style>
+  }
+</style> -->

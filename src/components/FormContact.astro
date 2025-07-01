@@ -1,96 +1,100 @@
 ---
 // import CallToAction from './CallToAction.astro';
-import Icon from './Icon.astro';
+import Icon from "./Icon.astro";
+import "bootstrap/dist/css/bootstrap.css";
 ---
 
----
----
-<h1>Registro</h1>
-<form method="POST">
-  <label>
-    Usuario:
-    <input type="text" name="username" required />
-  </label>
-  <label>
-    Correo electrónico:
-    <input type="email" name="email" required />
-  </label>
-  <label>
-    Contraseña:
-    <input type="password" name="password" required minlength="6" />
-  </label>
-  <button>Enviar</button>
+<form action="#" method="get" class="">
+    <section>
+        <div class="mb-2 form-floating">
+            <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                aria-describedby="nameHelp"
+                placeholder="nombre"
+                required
+            />
+            <label for="nombre">Nombre Completo</label>
+        </div>
+        <div class="mb-2 form-floating">
+            <input
+                type="email"
+                class="form-control"
+                id="mail"
+                aria-describedby="emailHelp"
+                placeholder="email"
+                required
+            />
+            <label for="mail">Correo Electrónico</label>
+        </div>
+
+        <div class="form-floating">
+            <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="comentarios"></textarea>
+            <label for="comentarios">Comentarios</label>
+        </div>
+        <div class="mb-2 form-floating">
+            <button type="submit" class="btn btn-primary "
+                >Enviar</button
+            >
+        </div>
+    </section>
 </form>
-<!-- <form>
-  <label>
-    Usuario:
-    <input type="text" name="username" />
-  </label>
-  <label>
-    Correo electrónico:
-    <input type="email" name="email" />
-  </label>
-  <label>
-    Contraseña:
-    <input type="password" name="password" />
-  </label>
-  <button>Enviar</button>
-</form> -->
-
-<!-- <div
-  class="not-content mx-auto my-3 rounded-3xl border border-gray-200 bg-gray-100 p-6 text-gray-900 md:p-10"
->
-  <h3 class="w-full text-center text-2xl font-medium">Contact Me</h3>
-  <form id="contact-form" name="contact form" class="mt-4 flex flex-col gap-3">
-    <input type="hidden" name="form-name" value="contact" />
-    <div>
-      <label for="contact-name" class="mb-1 text-gray-600">Name</label>
-      <input
-        type="text"
-        class="form__input"
-        name="name"
-        id="contact-name"
-        placeholder="Your preferred name"
-        required
-      />
-    </div>
-    <div>
-      <label for="contact-email" class="mb-1 text-gray-600">Email</label>
-      <input
-        type="email"
-        class="form__input"
-        name="email"
-        id="contact-email"
-        inputmode="email"
-        placeholder="Your best contact email"
-        required
-      />
-    </div>
-    <div>
-      <label for="contact-message" class="text-gray-600">Message</label>
-      <textarea
-        name="message"
-        class="form__input"
-        id="contact-message"
-        rows="4"
-        placeholder="write your message here"
-        required
-      ></textarea>
-    </div>
-    <button
-      type="submit"
-      class="focus-visible:ring-opacity-50 flex items-center justify-center gap-2 rounded-md bg-blue-600 p-2.5 text-white transition hover:bg-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
-    >
-      Submit
-    </button>
-  </form>
-</div>
-
 <style>
-  @import "tailwindcss/theme" theme(reference);
+form {
+        width: 90%;
+        margin: 0 auto;
+    }
+    form>section>div {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+     .btn {
+        margin-top: 0.5rem;
+        width: 80%;
+      
+    }
+    .btn-primary {
+        
+        border-color: var(--accent-text-over);
+        position: relative;
+		display: flex;
+		place-content: center;
+		text-align: center;
+		padding: 0.56em 2em;
+		gap: 0.8em;
+		color: var(--accent-text-over);
+		text-decoration: none;
+		line-height: 1.1;
+		border-radius: 999rem;
+		overflow: hidden;
+		background: var(--gradient-accent-orange);
+		box-shadow: var(--shadow-md);
+		white-space: nowrap;
 
-  .form__input {
-    @apply w-full rounded-md border border-transparent bg-gray-200 p-2.5 transition outline-none;
-    @apply focus-visible:border-blue-600/70 focus-visible:ring-2 focus-visible:ring-blue-600/50;
-  }
-</style> -->
+    }
+    @media (min-width: 50em){
+form {
+        width: 50%;
+        margin: 0 auto;
+    }
+    /* centrar el boton dentro del formulario */
+    form>section>div {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+    
+    .form-floating {
+        margin-bottom: 1rem;
+    }
+    .btn {
+        width: 50%;
+    }
+    
+    }
+     </style>   

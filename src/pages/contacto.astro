@@ -8,7 +8,7 @@ import FormContact from "../components/FormContact.astro";
   description="¿Tienes alguna pregunta o comentario?. Estoy aquí para ayudarte y responder a tus inquietudes."
 >
   <div class="stack gap-20">
-    <main class="contact">
+    <main class="wrapper contact">
       <h2>¿Tienes alguna pregunta o comentario?</h2>
        <FormContact />
       <p>
@@ -26,7 +26,8 @@ import FormContact from "../components/FormContact.astro";
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 6.5rem;
+    gap: 2.5rem;
+    color: var(--gray-0);
   }
   .contact> p {
     font-size: var(--text-md);

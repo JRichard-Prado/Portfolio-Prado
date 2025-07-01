@@ -1,0 +1,66 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import FormContact from "../components/FormContact.astro";
+---
+
+<BaseLayout
+  title="Contacto | Richard Prado"
+  description="¿Tienes alguna pregunta o comentario?. Estoy aquí para ayudarte y responder a tus inquietudes."
+>
+  <div class="stack gap-20">
+    <main class="contact">
+      <h2>¿Tienes alguna pregunta o comentario?</h2>
+       <FormContact />
+      <p>
+        Si tienes alguna pregunta, comentario o simplemente quieres saludar, no
+        dudes en ponerte en contacto conmigo. Estoy aquí para ayudarte y
+        responder a tus inquietudes.
+      </p>
+    </main>
+  </div>
+</BaseLayout>
+
+<style>
+  .contact {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6.5rem;
+  }
+  .contact> p {
+    font-size: var(--text-md);
+    text-align: center;
+  }
+ 
+    h2 {
+    font-size: var(--text-xl);
+  }
+ 
+  @media (min-width: 50em) {
+    .contact {
+      height: 60vh;
+      display: grid;
+      width: 100%;
+      justify-content: center;
+      grid-template-columns: none;
+      grid-template-rows: 1fr 2fr 1fr;
+      gap: 1.5rem;      
+    }
+    .contact > p {
+      color: var(--gray-200);
+      font-size: var(--text-xl);
+      padding: 0 15rem ;
+      text-align: center;
+    }
+    .contact > :global(:first-child) {
+      grid-column-start: 1;
+    }
+  }
+   h2 {
+      font-size: var(--text-3xl);
+      text-align: center;
+    }
+
+
+</style>

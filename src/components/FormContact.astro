@@ -1,77 +1,174 @@
 ---
-// import CallToAction from './CallToAction.astro';
-import Icon from './Icon.astro';
+// import 'bootstrap/dist/css/bootstrap.css'
+// import { Breadcrumb } from 'astro-bootstrap';
+// import 'fonts.googleapis.com/css?family=Noto+Sans';
 ---
-<!-- <form>
-  <label>
-    Usuario:
-    <input type="text" name="username" />
-  </label>
-  <label>
-    Correo electrónico:
-    <input type="email" name="email" />
-  </label>
-  <label>
-    Contraseña:
-    <input type="password" name="password" />
-  </label>
-  <button>Enviar</button>
-</form> -->
+<div class="contact_form">
 
-<div
-  class="not-content mx-auto my-3 rounded-3xl border border-gray-200 bg-gray-100 p-6 text-gray-900 md:p-10"
->
-  <h3 class="w-full text-center text-2xl font-medium">Contact Me</h3>
-  <form id="contact-form" name="contact form" class="mt-4 flex flex-col gap-3">
-    <input type="hidden" name="form-name" value="contact" />
-    <div>
-      <label for="contact-name" class="mb-1 text-gray-600">Name</label>
-      <input
-        type="text"
-        class="form__input"
-        name="name"
-        id="contact-name"
-        placeholder="Your preferred name"
-        required
-      />
-    </div>
-    <div>
-      <label for="contact-email" class="mb-1 text-gray-600">Email</label>
-      <input
-        type="email"
-        class="form__input"
-        name="email"
-        id="contact-email"
-        inputmode="email"
-        placeholder="Your best contact email"
-        required
-      />
-    </div>
-    <div>
-      <label for="contact-message" class="text-gray-600">Message</label>
-      <textarea
-        name="message"
-        class="form__input"
-        id="contact-message"
-        rows="4"
-        placeholder="write your message here"
-        required
-      ></textarea>
-    </div>
-    <button
-      type="submit"
-      class="focus-visible:ring-opacity-50 flex items-center justify-center gap-2 rounded-md bg-blue-600 p-2.5 text-white transition hover:bg-blue-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
-    >
-      Submit
-    </button>
-  </form>
-</div>
+		<div class="formulario">			
+      
 
-<style>
-  /* @import "tailwindcss/theme" theme(reference);
 
-  .form__input {
-    @apply w-full rounded-md border border-transparent bg-gray-200 p-2.5 transition outline-none;
-    @apply focus-visible:border-blue-600/70 focus-visible:ring-2 focus-visible:ring-blue-600/50;
-  } */
-</style>
+					<form action="submeter-formulario.php" method="post">				
+
+						
+								<p>
+									<label for="nombre" class="colocar_nombre">Nombre
+										<span class="obligatorio">*</span>
+									</label>
+										<input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+								</p>
+							
+								<p>
+									<label for="email" class="colocar_email">Email
+										<span class="obligatorio">*</span>
+									</label>
+										<input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+								</p>
+						
+								
+								
+							
+								<p>
+									<label for="mensaje" class="colocar_mensaje">Mensaje
+										<span class="obligatorio">*</span>
+									</label>                     
+                               		  <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                               	</p>	  								
+							
+								<button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+												
+						
+					</form>
+		</div>	
+	</div>
+  <style>
+    .contact_form{	
+	width: 90%; 
+  height: auto;
+  margin: 0 auto;
+	border-radius: 10px;  
+  border: #5d1b83 solid 2px;
+	padding-top: 30px;
+	padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 1rem; 
+  box-shadow: 5px 2px 10px 5px rgba(96, 19, 119, 0.1);
+  }
+
+
+  @media (min-width: 50em) {
+  .contact_form{	
+	width: 40%; 
+  height: auto;
+  margin: 0 auto;
+	border-radius: 10px;  
+  border: #5d1b83 solid 2px;
+	padding-top: 30px;
+	padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+  box-shadow: 5px 2px 10px 5px rgba(96, 19, 119, 0.1);
+  }
+}
+
+
+input{
+	background-color: #fbfbfb; 
+	width: 95%; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #ab4493; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 95%; 
+	height: 5rem; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #ab4493; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+	float: center; 	
+}
+
+button{
+	/* height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: #ab4493; 
+	border-color: #ab4493; 
+	border-style: solid; 
+	border-radius: 10px;	*/
+	width: 95%;   
+  cursor: pointer; 
+   border-color: var(--accent-text-over);
+        position: relative;
+		display: flex;
+		place-content: center;
+		text-align: center;
+		padding: 0.56em 2em;
+		gap: 0.8em;
+		color: var(--accent-text-over);
+		line-height: 1.1;
+		border-radius: 999rem;
+		overflow: hidden;
+		background: var(--gradient-accent-orange);
+		box-shadow: var(--shadow-md);
+}
+
+
+button p{
+	color: #fff; 
+}
+
+
+
+p{
+	font-size: 14px; 
+	color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+	outline:0;
+	border: 2px solid #5462dd;
+}
+
+
+.formulario textarea:focus{
+	outline:0;
+border: 2px solid #5462dd;
+}
+
+  </style>
+

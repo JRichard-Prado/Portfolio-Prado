@@ -26,7 +26,8 @@ import FormContact from "../components/FormContact.astro";
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 6.5rem;
+    gap: 1.5rem;
+    
   }
   .contact> p {
     font-size: var(--text-md);
@@ -35,11 +36,12 @@ import FormContact from "../components/FormContact.astro";
  
     h2 {
     font-size: var(--text-xl);
+    
   }
  
   @media (min-width: 50em) {
     .contact {
-      height: 60vh;
+      height: 90vh;
       display: grid;
       width: 100%;
       justify-content: center;
@@ -48,8 +50,7 @@ import FormContact from "../components/FormContact.astro";
       gap: 1.5rem;      
     }
     .contact > p {
-      color: var(--gray-200);
-      font-size: var(--text-xl);
+      font-size: var(--text-sm);
       padding: 0 15rem ;
       text-align: center;
     }
@@ -60,6 +61,7 @@ import FormContact from "../components/FormContact.astro";
    h2 {
       font-size: var(--text-3xl);
       text-align: center;
+   
     }
 
 

@@ -1,9 +1,104 @@
 ---
-// import 'bootstrap/dist/css/bootstrap.css'
-// import { Breadcrumb } from 'astro-bootstrap';
+import Icon from "./Icon.astro";
+import 'bootstrap/dist/css/bootstrap.css'
 // import 'fonts.googleapis.com/css?family=Noto+Sans';
 ---
-<div class="contact_form">
+<form action="submeter-formulario.php" method="post">
+    <section>
+        <div class="mb-2 form-floating">
+            <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                aria-describedby="nameHelp"
+                placeholder="nombre"
+                required
+            />
+            <label for="nombre">Nombre Completo</label>
+        </div>
+        <div class="mb-2 form-floating">
+            <input
+                type="email"
+                class="form-control"
+                id="mail"
+                aria-describedby="emailHelp"
+                placeholder="email"
+                required
+            />
+            <label for="mail">Correo Electrónico</label>
+        </div>
+
+        <div class="form-floating">
+            <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="comentarios"></textarea>
+            <label for="comentarios">Comentarios</label>
+        </div>
+        <div class="mb-2 form-floating">
+            <button type="submit" class="btn btn-primary "
+                >Enviar</button
+            >
+        </div>
+    </section>
+</form>
+<style>
+form {
+        width: 90%;
+        margin: 0 auto;
+    }
+    form>section>div {
+        display: flex;
+        /* gap: 1rem; */
+        justify-content: center;
+    }
+     .btn {
+        margin-top: 0.5rem;
+        width: 80%;
+      
+    }
+    .btn-primary {
+        
+        border-color: var(--accent-text-over);
+        position: relative;
+		display: flex;
+		place-content: center;
+		text-align: center;
+		padding: 0.56em 2em;
+		gap: 0.8em;
+		color: var(--accent-text-over);
+		text-decoration: none;
+		line-height: 1.1;
+		border-radius: 999rem;
+		overflow: hidden;
+		background: var(--gradient-accent-orange);
+		box-shadow: var(--shadow-md);
+		white-space: nowrap;
+
+    }
+    @media (min-width: 50em){
+form {
+        width: 45%;
+        margin: 0 auto;
+    }
+    /* centrar el boton dentro del formulario */
+    form>section>div {
+        display: flex;
+        /* gap: 1rem; */
+        justify-content: center;
+    }
+    
+    .form-floating {
+        margin-bottom: 1rem;
+    }
+    .btn {
+        width: 45%;
+    }
+    
+    }
+     </style>   
+
+<!-- <div class="contact_form">
 
 		<div class="formulario">			
       
@@ -170,5 +265,5 @@ p{
 border: 2px solid #5462dd;
 }
 
-  </style>
+  </style> -->
 

@@ -1,16 +1,77 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from "../layouts/BaseLayout.astro";
 import FormContact from "../components/FormContact.astro";
----
+import 'bootstrap/dist/css/bootstrap.css'
 
-<BaseLayout
+// Component Imports
+import CallToAction from '../components/CallToAction.astro';
+import Grid from '../components/Grid.astro';
+import Hero from '../components/Hero.astro';
+import Icon from '../components/Icon.astro';
+import Pill from '../components/Pill.astro';
+import PortfolioPreview from '../components/PortfolioPreview.astro';
+
+// Page section components
+import ContactCTA from '../components/ContactCTA.astro';
+import Skills from '../components/Skills.astro';
+
+const projects = (await getCollection('work'))
+	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+	.slice(0, 3);
+---
+ <h1>Send me an email</h1>
+    <form action="../api/send" >
+      <button>Send</button>
+    </form>
+<!-- <BaseLayout
   title="Contacto | Richard Prado"
   description="¿Tienes alguna pregunta o comentario?. Estoy aquí para ayudarte y responder a tus inquietudes."
 >
   <div class="stack gap-20">
     <main class="contact">
       <h2>¿Tienes alguna pregunta o comentario?</h2>
-       <FormContact />
+        <form action="api/send" >
+    <section>
+        <div class="mb-2 form-floating">
+            <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                aria-describedby="nameHelp"
+                placeholder="nombre"
+                required
+            />
+            <label for="nombre">Nombre Completo</label>
+        </div>
+        <div class="mb-2 form-floating">
+            <input
+                type="email"
+                class="form-control"
+                id="mail"
+                aria-describedby="emailHelp"
+                placeholder="email"
+                required
+            />
+            <label for="mail">Correo Electrónico</label>
+        </div>
+
+        <div class="form-floating">
+            <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="comentarios"></textarea>
+            <label for="comentarios">Comentarios</label>
+        </div>
+        <div class="mb-2 form-floating">
+            <button class="btn btn-primary "
+                >Enviar</button>
+        </div>
+    </section>
+    <button class="btn btn-primary "
+                >Enviar</button>
+</form>
+ 
       <p>
         Si tienes alguna pregunta, comentario o simplemente quieres saludar, no
         dudes en ponerte en contacto conmigo. Estoy aquí para ayudarte y
@@ -18,9 +79,9 @@ import FormContact from "../components/FormContact.astro";
       </p>
     </main>
   </div>
-</BaseLayout>
+</BaseLayout> -->
 
-<style>
+<!-- <style>
   .contact {
     height: 100%;
     display: flex;
@@ -68,3 +129,58 @@ import FormContact from "../components/FormContact.astro";
 
 
 </style>
+<style>
+form {
+        width: 90%;
+        margin: 0 auto;
+    }
+    form>section>div {
+        display: flex;
+        /* gap: 1rem; */
+        justify-content: center;
+    }
+     .btn {
+        margin-top: 0.5rem;
+        width: 80%;
+      
+    }
+    .btn-primary {
+        
+        border-color: var(--accent-text-over);
+        position: relative;
+		display: flex;
+		place-content: center;
+		text-align: center;
+		padding: 0.56em 2em;
+		gap: 0.8em;
+		color: var(--accent-text-over);
+		text-decoration: none;
+		line-height: 1.1;
+		border-radius: 999rem;
+		overflow: hidden;
+		background: var(--gradient-accent-orange);
+		box-shadow: var(--shadow-md);
+		white-space: nowrap;
+
+    }
+    @media (min-width: 50em){
+form {
+        width: 45%;
+        margin: 0 auto;
+    }
+    /* centrar el boton dentro del formulario */
+    form>section>div {
+        display: flex;
+        /* gap: 1rem; */
+        justify-content: center;
+    }
+    
+    .form-floating {
+        margin-bottom: 1rem;
+    }
+    .btn {
+        width: 45%;
+    }
+    
+    }
+     </style>  -->

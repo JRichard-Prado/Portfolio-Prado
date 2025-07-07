@@ -3,7 +3,7 @@ import { Resend } from "resend";
 // import SampleEmail from "../../emails/sampleEmail";
 // import { render } from "@react-email/render";
 
-const resend = new Resend(import.meta.env.RESEND_APIKEY);
+const resend = new Resend(process.env.RESEND_APIKEY);
 
 export const GET: APIRoute = async () => {
   // create the email

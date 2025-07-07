@@ -15,7 +15,7 @@ export const handler = async (event: any, context: any) => {
     from: "Richard <onboarding@resend.dev>",
     to: ["delivered@resend.dev"],
     subject: "It works!",
-    html: `<p>Correo desde  contacto bootstrap modo static!</p>`,
+    html: `<p>Correo desde  contacto bootstrap modo server funtions netlify!</p>`,
   });
 
   if (error) {
@@ -24,7 +24,6 @@ export const handler = async (event: any, context: any) => {
       body: JSON.stringify(error),
     };
   }
-// retorna un redirect a la página de éxito
   return {
     statusCode: 302, 
     headers: {
@@ -33,9 +32,4 @@ export const handler = async (event: any, context: any) => {
     body: "",
   };
 
-
-  // return {
-  //   statusCode: 200,
-  //   body: JSON.stringify({ data }),
-  // };
 };

@@ -18,7 +18,7 @@ export const GET: APIRoute = async () => {
     from: "Richard <onboarding@resend.dev>",
     to: ["delivered@resend.dev"],
     subject: "It works!",
-    html: `<p>It works correo desde  contacto!</p>`,
+    html: `<p>It works correo desde  contacto bootstrap!</p>`,
     
   });
 

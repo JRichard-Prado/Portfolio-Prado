@@ -20,18 +20,18 @@ const projects = (await getCollection('work'))
 	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
 	.slice(0, 3);
 ---
- <h1>Send me an email</h1>
+ <!-- <h1>Send me an email</h1>
     <form action="../api/send" >
       <button>Send</button>
-    </form>
-<!-- <BaseLayout
+    </form> -->
+<BaseLayout
   title="Contacto | Richard Prado"
   description="¿Tienes alguna pregunta o comentario?. Estoy aquí para ayudarte y responder a tus inquietudes."
 >
   <div class="stack gap-20">
     <main class="contact">
       <h2>¿Tienes alguna pregunta o comentario?</h2>
-        <form action="api/send" >
+        <form action="../api/send" >
     <section>
         <div class="mb-2 form-floating">
             <input
@@ -68,8 +68,7 @@ const projects = (await getCollection('work'))
                 >Enviar</button>
         </div>
     </section>
-    <button class="btn btn-primary "
-                >Enviar</button>
+    
 </form>
  
       <p>
@@ -79,9 +78,9 @@ const projects = (await getCollection('work'))
       </p>
     </main>
   </div>
-</BaseLayout> -->
+</BaseLayout>
 
-<!-- <style>
+<style>
   .contact {
     height: 100%;
     display: flex;
@@ -183,4 +182,4 @@ form {
     }
     
     }
-     </style>  -->
+     </style> 

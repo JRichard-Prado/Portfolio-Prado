@@ -5,10 +5,102 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 
 ---
-<BaseLayout>
-   title="Éxito | Formulario de Contacto"
-  <h1 class="text-success mt-5">¡Gracias por contactarme!</h1>
+ <BaseLayout
+  title="Contacto | Richard Prado"
+  description="¿Tienes alguna pregunta o comentario?. Estoy aquí para ayudarte y responder a tus inquietudes.">
+   
+  <main class="contact">
+  <h1 >¡Gracias por contactarme!</h1>
   <p>Tu mensaje ha sido enviado exitosamente. Me pondré en contacto contigo pronto.</p>
-  <p><a href="/" class="btn btn-primary mt-3">Volver al inicio</a></p>
+  <p><a href="/" class="btn btn-primary ">Volver al inicio</a></p>
+</main>
+ 
 </BaseLayout>
 
+
+<style>
+  .contact {
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 1.5rem; */
+    
+  }
+  .contact> p {
+    font-size: var(--text-md);
+    text-align: center;
+  }
+ 
+    h2 {
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+    
+  }
+ 
+     .btn {
+        margin-top: 0.5rem;
+        width: 80%;
+      
+    }
+    .btn-primary {
+        
+        border-color: var(--accent-text-over);
+        position: relative;
+		display: flex;
+		place-content: center;
+		text-align: center;
+		padding: 0.56em 2em;
+		gap: 0.8em;
+		color: var(--accent-text-over);
+		text-decoration: none;
+		line-height: 1.1;
+		border-radius: 999rem;
+		overflow: hidden;
+		background: var(--gradient-accent-orange);
+		box-shadow: var(--shadow-md);
+		white-space: nowrap;
+
+    }
+  @media (min-width: 50em) {
+    .contact {
+      height: 65vh;
+      display: grid;
+      width: 100%;
+      justify-content: center;
+      grid-template-columns: none;
+      grid-template-rows: 1fr 1fr 1fr;
+      /* gap: 1.5rem;       */
+    }
+    .contact > p {
+      font-size: var(--text-xl);
+      padding: 0 15rem ;
+      text-align: center;
+      color: var(--gray-0);
+    }
+    .contact > :global(:first-child) {
+      grid-column-start: 1;
+    }
+  }
+   
+ h1 {
+      font-size: var(--text-3xl);
+      text-align: center;
+      color: var(--gray-0);
+   
+    }
+   
+    .btn {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+</style>
+<!-- <style>
+
+    @media (min-width: 50em){
+
+    
+    
+    }
+     </style>  -->

@@ -1,4 +1,6 @@
 import { Resend } from "resend";
+import type { APIRoute } from "astro";
+
 // import SampleEmail from "../../emails/sampleEmail";
 // import { render } from "@react-email/render";
 
@@ -22,9 +24,18 @@ export const handler = async (event: any, context: any) => {
       body: JSON.stringify(error),
     };
   }
-
+// retorna un redirect a la página de éxito
   return {
-    statusCode: 200,
-    body: JSON.stringify({ data }),
+    statusCode: 302, 
+    headers: {
+      Location: "/success",
+    },
+    body: "",
   };
+
+
+  // return {
+  //   statusCode: 200,
+  //   body: JSON.stringify({ data }),
+  // };
 };

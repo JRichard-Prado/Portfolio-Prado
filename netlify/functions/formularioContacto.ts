@@ -24,12 +24,18 @@ export const handler = async (event: any, context: any) => {
       body: JSON.stringify(error),
     };
   }
+  // retorna una respuesta de data al cuerpo
   return {
-    statusCode: 302, 
-    headers: {
-      Location: "/success",
-    },
-    body: "",
+    statusCode: 200,
+    body: JSON.stringify({ data }),
   };
+  // retorna una respuesta de redirección
+  // return {
+  //   statusCode: 302, 
+  //   headers: {
+  //     Location: "/success",
+  //   },
+  //   body: "",
+  // };
 
 };

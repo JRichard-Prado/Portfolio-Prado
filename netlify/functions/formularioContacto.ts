@@ -44,7 +44,7 @@ if (event.httpMethod === "POST") {
   const { data, error } = await resend.emails.send({
     from: "Richard <onboarding@resend.dev>",
     to: ["delivered@resend.dev"],
-    subject: "Nuevo mensaje de contacto",
+    subject: `Nuevo mensaje de contacto de ${nombre ?? ""}`,
     html: `
       <p><strong>Nombre:</strong> ${nombre ?? ""}</p>
       <p><strong>Email:</strong> ${email ?? ""}</p>
@@ -64,6 +64,7 @@ if (event.httpMethod === "POST") {
     headers: {
       Location: "/success",
     },
+    body:"",
   };
   // retorna una respuesta de redirección
   // return {

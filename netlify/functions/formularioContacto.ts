@@ -59,6 +59,9 @@ if (event.httpMethod === "POST") {
   return {
     statusCode: 200,
     body: JSON.stringify({ data , formUrl }),
+    headers: {
+      Location: "/success",
+    },
   };
   // retorna una respuesta de redirección
   // return {

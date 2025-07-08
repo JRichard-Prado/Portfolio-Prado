@@ -10,6 +10,9 @@ export const handler = async (event: any, context: any) => {
   // const emailContent = SampleEmail({ username: "Chris" });
   // const html = await render(emailContent);
   // const text = await render(emailContent, { plainText: true });
+
+
+  // obtener los datos del formulario como parámetros recibidos en una solicitud HTTP
   const formData = new URLSearchParams(event.body);
   const nombre = formData.get("nombre");
   const email = formData.get("mail");
@@ -58,7 +61,6 @@ if (event.httpMethod === "POST") {
  
   return {
     statusCode: 200,
-    body: JSON.stringify({ data , formUrl }),
     headers: {
       Location: "/success",
     },

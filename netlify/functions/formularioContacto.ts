@@ -10,7 +10,29 @@ export const handler = async (event: any, context: any) => {
   // const emailContent = SampleEmail({ username: "Chris" });
   // const html = await render(emailContent);
   // const text = await render(emailContent, { plainText: true });
-
+const errors = { nombre: "", email: "", comentarios: "" };
+if (event.httpMethod === "POST") {
+  try {
+    // Parse form data from event.body (assuming application/x-www-form-urlencoded)
+    const formData = new URLSearchParams(event.body);
+    const nombre = formData.get("nombre");
+    const email = formData.get("email");
+    const comentarios = formData.get("comentarios");
+    // Do something with the data
+    if (typeof nombre !== "string" || nombre.length < 1) {
+      errors.nombre += "Please enter a nombre. ";
+    }
+   
+    if (typeof comentarios !== "string" || comentarios.length < 1) {
+      errors.comentarios += "Please enter a comment. ";
+    }
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(error.message);
+    }
+  }
+}
+  // Envía un correo electrónico utilizando Resend
   const { data, error } = await resend.emails.send({
     from: "Richard <onboarding@resend.dev>",
     to: ["delivered@resend.dev"],
@@ -24,10 +46,11 @@ export const handler = async (event: any, context: any) => {
       body: JSON.stringify(error),
     };
   }
-  // retorna una respuesta de data al cuerpo
+ 
+  
   return {
     statusCode: 200,
-    body: JSON.stringify({ data }),
+    body: JSON.stringify({ data , errors }),
   };
   // retorna una respuesta de redirección
   // return {

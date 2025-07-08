@@ -64,7 +64,7 @@ if (event.httpMethod === "POST") {
     headers: {
       Location: "/success",
     },
-    body:"",
+    body: "",
   };
   // retorna una respuesta de redirección
   // return {

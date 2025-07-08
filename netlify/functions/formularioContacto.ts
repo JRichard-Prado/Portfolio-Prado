@@ -49,6 +49,7 @@ export const handler = async (event: any, context: any) => {
       <p><strong>Nombre:</strong> ${nombre ?? ""}</p>
       <p><strong>Email:</strong> ${email ?? ""}</p>
       <p><strong>Comentarios:</strong> ${comentarios ?? ""}</p>
+      <h1>Fecha y hora del sistema: ${new Date().toLocaleString()}</h1>
     `,
   });
 

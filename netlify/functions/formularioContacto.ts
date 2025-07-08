@@ -41,8 +41,12 @@ if (event.httpMethod === "POST") {
   const { data, error } = await resend.emails.send({
     from: "Richard <onboarding@resend.dev>",
     to: ["delivered@resend.dev"],
-    subject: "It works!",
-    html: `<p>Correo desde  contacto bootstrap modo server funtions netlify!</p>`,
+    subject: "Nuevo mensaje de contacto",
+    html: `
+      <p><strong>Nombre:</strong> ${nombre ?? ""}</p>
+      <p><strong>Email:</strong> ${email ?? ""}</p>
+      <p><strong>Comentarios:</strong> ${comentarios ?? ""}</p>
+    `,
   });
 
   if (error) {
@@ -52,7 +56,6 @@ if (event.httpMethod === "POST") {
     };
   }
  
-  
   return {
     statusCode: 200,
     body: JSON.stringify({ data , formUrl }),

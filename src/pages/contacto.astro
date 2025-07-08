@@ -4,33 +4,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 // import { isRegistered, registerUser } from "../../data/users"
 // import { isValidEmail } from "../../utils/isValidEmail";
 
-const errors = { nombre: "", email: "", comentarios: "" };
-if (Astro.request.method === "POST") {
-  try {
-    // solicitud HTTP entrante en una página o endpoint de Astro. El método formData() extrae y analiza los datos enviados mediante el método POST
-    const data = await Astro.request.formData();
-    const nombre = data.get("nombre");
-    const email = data.get("email");
-    const comentarios = data.get("comentarios");
-    // Do something with the data
-    if (typeof nombre !== "string" || nombre.length < 1) {
-      errors.nombre += "Please enter a nombre. ";
-    }
-    // if (typeof email !== "string" || !isValidEmail(email)) {
-    //   errors.email += "Email is not valid. ";
-    // } else if (await isRegistered(email)) {
-    //   errors.email += "Email is already registered. ";
-    // }
-    if (typeof comentarios !== "string" || comentarios.length < 1) {
-      errors.comentarios += "Please enter a comment. ";
-    }
-  } catch (error) {
-    if (error instanceof Error) {
-      console.error(error.message);
-    }
-  }
-}
-
 ---
 
 <BaseLayout
@@ -41,7 +14,7 @@ if (Astro.request.method === "POST") {
     <main class="contact">
       <h2>¿Tienes alguna pregunta o comentario?</h2>
         <!-- <form action="/.netlify/functions/formularioContacto" method="POST" > -->
-        <form action="/.netlify/functions/formularioContacto" method="POST" >
+        <form action="/.netlify/functions/formularioContacto"  >
     <section>
         <div class="mb-2 form-floating">
             <input
@@ -54,7 +27,6 @@ if (Astro.request.method === "POST") {
                 
             />
             <label for="nombre">Nombre Completo</label>
-              {errors.nombre && <p>{errors.nombre}</p>}
         </div>
         <div class="mb-2 form-floating">
             <input
@@ -67,7 +39,6 @@ if (Astro.request.method === "POST") {
                 required
             />
             <label for="mail">Correo Electrónico</label>
-              <!-- {errors.email && <p>{errors.email}</p>} -->
         </div>
 
         <div class="form-floating">
@@ -78,7 +49,6 @@ if (Astro.request.method === "POST") {
                 name="comentarios"
                 ></textarea>
             <label for="comentarios">Comentarios</label>
-              {errors.comentarios && <p>{errors.comentarios}</p>}
         </div>
         <div class="mb-2 form-floating">
             <button type="submit" class="btn btn-primary "

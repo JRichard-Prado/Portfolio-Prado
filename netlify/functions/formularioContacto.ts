@@ -10,7 +10,12 @@ export const handler = async (event: any, context: any) => {
   // const emailContent = SampleEmail({ username: "Chris" });
   // const html = await render(emailContent);
   // const text = await render(emailContent, { plainText: true });
-const errors = { nombre: "", email: "", comentarios: "" };
+  const formData = new URLSearchParams(event.body);
+  const nombre = formData.get("nombre");
+  const email = formData.get("email");
+  const comentarios = formData.get("comentarios");
+
+  const errors = { nombre: nombre, email: email ,comentarios: comentarios };
 if (event.httpMethod === "POST") {
   try {
     // Parse form data from event.body (assuming application/x-www-form-urlencoded)
